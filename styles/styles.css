@@ -1,11 +1,19 @@
 body {
-
+  margin: 0;
+  font-size: 12px;
+  font-family: sans-serif;
 }
 
 ul {
+  padding-left: 0;
+  list-style: none;
+}
 
+* {
+  box-sizing: border-box;
+  /*changes the way we calculate height and width and doesnt account for margin*/
 }
 
 img {
-
+  max-width: 100%;
 }
