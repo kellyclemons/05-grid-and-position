@@ -76,22 +76,31 @@ img {
   /*** I want to be 25% but first let me make sure everything else can fit ***/
 
   /*** takes original size and then gets back in line (the items always take up the room they need to) ***/
-  background: #ac4fff;
+  background: white;
+}
+
+h3 {
+  margin: 0;
 }
 
 .card {
   border: #9affb9 solid 5px;
   min-width: 10rem;
-  position: relative;
+}
+
+.html-css {
+  padding: 0;
 }
 
 .yellow-bar {
-
+  position: relative;
   background-color: #ffe920;
   line-height: 3rem;
+
 }
 
 .card__tag {
+  line-height: 1rem;
   color: white;
   background: #0075ff;
   padding: .5rem;
@@ -111,6 +120,7 @@ img {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  transform: translateX(-50%)
 }
 
 
