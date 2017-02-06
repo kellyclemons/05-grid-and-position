@@ -18,37 +18,28 @@ img {
   max-width: 100%;
 }
 
-/*** Top Nav ***/
 
-.banner {
+/*** NAV BAR ***/
 
-}
+.banner {}
 
-.banner__navbar {
-
-}
+.banner__navbar {}
 
 .navbar {
-border-radius: .5rem .5rem 0 0;
+  border-radius: .5rem .5rem 0 0;
   padding: 1rem;
   color: white;
-  background: #007a64;
+  background: #0075ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar__group {
+.navbar__group {}
 
-}
+.navbar__group--left {}
 
-.navbar__group--left {
-
-}
-
-.navbar__group--right {
-
-}
+.navbar__group--right {}
 
 .nav-list {
   display: flex;
@@ -60,51 +51,67 @@ border-radius: .5rem .5rem 0 0;
   margin: 0.5rem 1rem;
 }
 
-/*** GRID ***/
+
+/*** CARDS / GRID ***/
 
 .section {
   padding: 1rem;
 }
 
 .container {
-  max-width: 65rem;
   margin: 0 auto;
 }
 
 .grid {
+  max-width: 100rem;
   display: flex;
-  flex-wrap: wrap; /*** If the screen is too small, the item pops down to the next row ***/
+  flex-wrap: wrap;
+  /*** If the screen is too small, the item pops down to the next row ***/
 }
 
 .grid__item {
   margin: 1rem;
-  flex-basis: calc(100% / 4 - 2rem); /*** I want to be 25% but first let me make sure everything else can fit ***/
+  flex-basis: calc(100% / 4 - 2rem);
+  /*** I want to be 25% but first let me make sure everything else can fit ***/
   float: left;
-
-  flex-grow: 1; /*** takes original size and then gets back in line (the items always take up the room they need to) ***/
-
+  flex-grow: 1;
+  /*** takes original size and then gets back in line (the items always take up the room they need to) ***/
   background: #ac4fff;
 }
 
 .card {
   border: #9affb9 solid 5px;
-  padding: 1rem;
-  min-width: 14rem;
+  min-width: 10rem;
   position: relative;
 }
 
-.card__tag {
-  background: goldenrod;
-  padding: 1rem;
+.yellow-bar {
+  padding: 0;
+  background-color: #ffe920;
+  line-height: 3rem;
+}
 
-  position: absolute; /*** Add margin: 0; whenever you use position: absolute; ***/
+.card__tag {
+  background: #0075ff;
+  padding: .5rem;
+  position: absolute;
+  /*** Add margin: 0; whenever you use position: absolute; ***/
   margin: 0;
   left: 50%;
   top: 0;
   text-align: center;
   transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .cat-image {
   border-radius: 50%;
+}
+
+.card__bottom {
+  background: white;
+}
+
+.card-text {
+  padding: .5rem;
 }
