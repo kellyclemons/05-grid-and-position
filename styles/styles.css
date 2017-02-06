@@ -83,11 +83,11 @@ border-radius: .5rem .5rem 0 0;
 
   flex-grow: 1; /*** takes original size and then gets back in line (the items always take up the room they need to) ***/
 
-  background: green;
+  background: #ac4fff;
 }
 
 .card {
-  border: red solid 5px;
+  border: #9affb9 solid 5px;
   padding: 1rem;
   min-width: 14rem;
   position: relative;
@@ -103,4 +103,8 @@ border-radius: .5rem .5rem 0 0;
   top: 0;
   text-align: center;
   transform: translateX(-50%);
+}
+
+.cat-image {
+  border-radius: 50%;
 }
