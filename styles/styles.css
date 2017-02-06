@@ -63,7 +63,8 @@ img {
 }
 
 .grid {
-  max-width: 100rem;
+  max-width: 60rem;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   /*** If the screen is too small, the item pops down to the next row ***/
@@ -71,10 +72,9 @@ img {
 
 .grid__item {
   margin: 1rem;
-  flex-basis: calc(100% / 4 - 2rem);
+  flex-basis: calc(100% / 2 - 2rem);
   /*** I want to be 25% but first let me make sure everything else can fit ***/
-  float: left;
-  flex-grow: 1;
+
   /*** takes original size and then gets back in line (the items always take up the room they need to) ***/
   background: #ac4fff;
 }
@@ -86,12 +86,13 @@ img {
 }
 
 .yellow-bar {
-  padding: 0;
+
   background-color: #ffe920;
   line-height: 3rem;
 }
 
 .card__tag {
+  color: white;
   background: #0075ff;
   padding: .5rem;
   position: absolute;
@@ -105,8 +106,14 @@ img {
 }
 
 .cat-image {
+  position: absolute;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
 }
+
+
 
 .card__bottom {
   background: white;
