@@ -27,6 +27,7 @@ img {
 
 .navbar {
   border-radius: .5rem .5rem 0 0;
+  line-height: 0.1rem;
   padding: 1rem;
   color: white;
   background: #0075ff;
@@ -84,18 +85,22 @@ h3 {
 }
 
 .card {
-  border: #9affb9 solid 5px;
   min-width: 10rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
 }
 
 .html-css {
   padding: 0;
 }
 
+h3 {
+  margin-left: 2.5rem;
+}
+
 .yellow-bar {
   position: relative;
-  background-color: #ffe920;
-  line-height: 3rem;
+  background-color: #ffe03d;
+  line-height: 4rem;
 
 }
 
@@ -103,6 +108,7 @@ h3 {
   line-height: 1rem;
   color: white;
   background: #0075ff;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
   padding: .5rem;
   position: absolute;
   /*** Add margin: 0; whenever you use position: absolute; ***/
@@ -120,7 +126,8 @@ h3 {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  transform: translateX(-50%)
+  transform: translate(-50%, 15%);
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
 }
 
 
