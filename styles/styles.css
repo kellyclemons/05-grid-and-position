@@ -74,6 +74,7 @@ img {
 .grid__item {
   margin: 1rem;
   flex-basis: calc(100% / 2 - 2rem);
+  flex-grow: 1;
   /*** I want to be 25% but first let me make sure everything else can fit ***/
 
   /*** takes original size and then gets back in line (the items always take up the room they need to) ***/
