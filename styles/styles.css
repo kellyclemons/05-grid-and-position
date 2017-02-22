@@ -21,12 +21,7 @@ img {
 
 /*** NAV BAR ***/
 
-.banner {}
-
-.banner__navbar {}
-
 .navbar {
-  border-radius: .5rem .5rem 0 0;
   line-height: 0.1rem;
   padding: 1rem;
   color: white;
@@ -35,12 +30,6 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-
-.navbar__group {}
-
-.navbar__group--left {}
-
-.navbar__group--right {}
 
 .nav-list {
   display: flex;
@@ -75,9 +64,7 @@ img {
   margin: 1rem;
   flex-basis: calc(100% / 2 - 2rem);
   flex-grow: 1;
-  /*** I want to be 25% but first let me make sure everything else can fit ***/
-
-  /*** takes original size and then gets back in line (the items always take up the room they need to) ***/
+  display: flex;
   background: white;
 }
 
