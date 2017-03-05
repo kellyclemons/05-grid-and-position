@@ -1,11 +1,129 @@
 body {
-
+  margin: 0;
+  font-size: 12px;
+  font-family: sans-serif;
 }
 
 ul {
+  padding-left: 0;
+  list-style: none;
+}
 
+* {
+  box-sizing: border-box;
+  /*changes the way we calculate height and width and doesnt account for margin*/
 }
 
 img {
+  max-width: 100%;
+}
 
+
+/*** NAV BAR ***/
+
+.navbar {
+  line-height: 0.1rem;
+  padding: 1rem;
+  color: white;
+  background: #0075ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: -0.5rem -1rem;
+}
+
+.nav-list__item {
+  margin: 0.5rem 1rem;
+}
+
+
+/*** CARDS / GRID ***/
+
+.section {
+  padding: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.grid {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  /*** If the screen is too small, the item pops down to the next row ***/
+}
+
+.grid__item {
+  margin: 1rem;
+  flex-basis: calc(100% / 2 - 2rem);
+  flex-grow: 1;
+  display: flex;
+  background: white;
+}
+
+h3 {
+  margin: 0;
+}
+
+.card {
+  min-width: 10rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+.html-css {
+  padding: 0;
+}
+
+h3 {
+  margin-left: 2.5rem;
+}
+
+.yellow-bar {
+  position: relative;
+  background-color: #ffe03d;
+  line-height: 4rem;
+
+}
+
+.card__tag {
+  line-height: 1rem;
+  color: white;
+  background: #0075ff;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+  padding: .5rem;
+  position: absolute;
+  /*** Add margin: 0; whenever you use position: absolute; ***/
+  margin: 0;
+  left: 50%;
+  top: 0;
+  text-align: center;
+  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+}
+
+.cat-image {
+  position: absolute;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  transform: translate(-50%, 15%);
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+
+
+.card__bottom {
+  background: white;
+}
+
+.card-text {
+  padding: .5rem;
 }
